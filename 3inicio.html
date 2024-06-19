@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>galeria</title>
+ 
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <div style="position: absolute; top: 50%; background-color: transparent;"><a href="8PREMIUM.php" style="cursor: pointer;"><img src="PremiumG.png" height="50px" width="auto"></a></div>
+</head>
+<body>
+  <div id="nav" style="position: absolute; top: 0%;">
+    <ul class="menu">
+        <li><a style="cursor: default;">Usuarios</a>
+                <ul>
+                <li><a href="4.1usuarios.php">Ver</a></li>                
+                <li><a href="4.2usuarios.php">Crear</a></li>
+                <li><a href="4.3usuarios.php">Actualizar</a></li>
+                <li><a href="4.4usuarios.php">Eliminar</a></li>
+                </ul>
+        </li>
+        <li><a style="cursor: default;">Tareas</a>
+            <ul>
+                <li><a href="5.1tareas.php">Ver</a></li>                
+                <li><a href="5.2tareas.php">Crear</a></li>
+                <li><a href="5.3tareas.php">Actualizar</a></li>
+                <li><a href="5.4tareas.php">Eliminar</a></li>
+            </ul>
+        </li>
+        <li><a style="cursor: default;">Notas</a>
+            <ul>
+                <li><a href="6.1notas.php">Ver</a></li>                
+                <li><a href="6.2notas.php">Crear</a></li>
+                <li><a href="6.3notas.php">Actualizar</a></li>
+                <li><a href="6.4notas.php">Eliminar</a></li>
+            </ul>
+        </li>
+        <li><a style="cursor: default;">Sesion</a>
+            <ul>
+                <li><a href="7.1estudio.php">Ver</a></li>                
+                <li><a href="7.2estudio.php">Crear</a></li>
+                <li><a href="7.3estudio.php">Actualizar</a></li>
+                <li><a href="7.4estudio.php">Eliminar</a></li>
+                <li><a href="7.5estudio.html">Iniciar 1hr</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<center>
+          <div id="container">
+ <div id="flex">
+<main>                                             
+<div class="container gallery-container">
+
+          <center>
+            <h1>Ideas de Notas</h1>
+          <div class="tz-gallery">
+              <div class="row">
+                  <div class="col-sm-6 col-md-4">
+                      <a class="lightbox" href="Galeria1.png">
+                          <img src="Galeria1.png"  width="200" height="auto">
+                      </a>
+                  </div>
+                  <div class="col-sm-6 col-md-4">
+                      <a class="lightbox" href="Galeria2.png">
+                          <img src="Galeria2.png"  width="200" height="auto">
+                      </a>
+                  </div>
+                  <div class="col-sm-6 col-md-4">
+                      <a class="lightbox" href="Galeria3.png">
+                         <img src="Galeria3.png" width="200" height="auto"></a>
+                      </a>
+                  </div>
+                  <div class="col-sm-6 col-md-4">
+                      <a class="lightbox" href="Galeria4.png">
+                         <img src="Galeria4.png" width="200" height="auto"></a>
+                      </a>
+                  </div>
+          </center>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+      <script>
+          baguetteBox.run('.tz-gallery');
+      </script>
+                              </main>
+                    </div>
+</div>
+</center>
+                   <style>
+                             #container{
+                              border: 1px black solid;
+                                       width: 400px;
+                                       height: 800px;
+                                       overflow-y: auto;
+                                       margin-top: 15%;
+                             }
+                             #container a{
+                                       color: white;
+                                       font-weight: bold;
+                                       text-decoration: none;
+                             }
+                             #flex{display: flex;}
+                              main{
+                                        background-color:  white;
+                                        flex: 1;
+                                        padding: 20px;
+                                        order: 2;
+                              }
+body{
+ background-color: #f8c277;
+}
+.menu > li{
+      float: left;
+      list-style: none;
+      height: 30px;
+      overflow: hidden;
+      transition: 2s;
+      -webkit-transition: 2s;
+      margin-left: 2px;
+      margin-right: 2px;
+      border-radius: 10%;
+
+    }
+    .menu li a{
+      display: block;
+    
+      height: 25px;
+      text-decoration: none;
+      overflow: hidden;
+      background-color: #ffdd8d;
+      padding: 5px 5px 5px 5px;
+      color: black;
+      text-align: center;
+    }
+    .menu li ul li{
+      display: inline !important;
+    }
+    .menu li ul li a{
+      margin-left: -40px;
+      text-align: left;
+    }
+    .menu >li:hover{
+    height: auto;
+    }
+    .menu li a:hover{
+      background-color: #df672b;
+      color: white;
+    }
+    .menu>li .active{
+      background-color: #df672b;
+      color: white;
+    }
+
+</style>
+</body>
+</html>
